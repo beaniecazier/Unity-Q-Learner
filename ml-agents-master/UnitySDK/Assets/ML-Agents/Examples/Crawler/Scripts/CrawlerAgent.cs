@@ -176,7 +176,7 @@ public class CrawlerAgent : Agent
         }
 
         // Joint update logic only needs to happen when a new decision is made
-        if (isNewDecisionStep)
+        if (true)
         {
             // The dictionary with all the body parts in it are in the jdController
             var bpDict = jdController.bodyPartsDict;
@@ -253,6 +253,7 @@ public class CrawlerAgent : Agent
     /// </summary>
     public override void AgentReset()
     {
+        /*
         if (dirToTarget != Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(dirToTarget);
@@ -265,5 +266,6 @@ public class CrawlerAgent : Agent
 
         isNewDecisionStep = true;
         currentDecisionStep = 1;
+        */
     }
 }
